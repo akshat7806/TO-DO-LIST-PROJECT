@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&family=Handjet:wght@300&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Roboto',sans-serif,Arial, Helvetica;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding-top: 10px;
+}
+.img{
+    width: 35px;
+    margin-left: 7px;
+    image-rendering:optimizeQuality;
+}
+.box{
+    background-color: #fff;
+    max-width: 72vh;
+    width: 100%;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.box-item1 h2{
+    display: flex;
+    color: #002765;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.input-text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    background: #edeef0;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+.input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight:25px;
+    font-size: medium;
+    width: 100%;
+    font-family: 'Roboto';
+}
+button{
+    background: #ff5945;
+    border-radius: 40px;
+    padding: 16px 40px;
+    color: #fff;
+    font-size:medium;
+    border: none;
+    box-shadow: 0 0 4px #ff5945;
+}
+ul li{
+    padding: 15px 8px 12px 50px;
+    list-style: none;
+    font-size: 17px;
+    position: relative;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    height: 28px;
+    width: 28px;
+    left: 8px;
+    top: 12px;
+    border-radius: 50%;
+    background-position: center;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content: "";
+    background-image: url(checked.png);
+    background-size: cover;
+}
+
+ul li span{
+ position: absolute;
+ right: 0;
+ text-align: center;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color: #555;
+line-height: 40px;
+top: 5px;
+border-radius: 50%;
+}
+span:hover{
+    background-color:#edeef0;
+}
+@media screen and (max-width:600px){
+    :root{
+        --padding-inline-section:10px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .box{
+        margin: 0px;
+    }
+}
